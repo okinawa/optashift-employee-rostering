@@ -139,14 +139,14 @@ OPENSHIFT_USER=${ARG_USERNAME:-$LOGGEDIN_USER}
 PRJ_SUFFIX=${ARG_PROJECT_SUFFIX:-`echo $OPENSHIFT_USER | sed -e 's/[-@].*//g'`}
 PRJ=optashift-$PRJ_SUFFIX
 
-PRJ_DISPLAY_NAME="OptaShift"
-PRJ_DESCRIPTION="OptaShift Employee Rostering Demo"
+PRJ_DISPLAY_NAME="ThesisCloudDemo"
+PRJ_DESCRIPTION="Employee Rostering Demo"
 #GIT_URI="https://github.com/ge0ffrey/optashift-employee-rostering"
 #GIT_URI="https://github.com/DuncanDoyle/optaplanner-openshift-worker-rostering" // TODO rename to optashift-employee-rostering
 #GIT_REF="openshift-template"
 
 # config
-GITHUB_ACCOUNT=${GITHUB_ACCOUNT:-ge0ffrey}
+GITHUB_ACCOUNT=${GITHUB_ACCOUNT:-okinawa}
 GIT_REF=${GITHUB_REF:-master}
 GIT_URI=https://github.com/$GITHUB_ACCOUNT/optashift-employee-rostering
 
