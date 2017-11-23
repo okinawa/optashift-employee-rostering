@@ -1,8 +1,5 @@
 = Employee Rostering Optimization as a Service
-
-An example https://www.optaplanner.org/[OptaPlanner] webapp ready to deploy on https://www.openshift.com/[OpenShift 3].
-
-See https://www.youtube.com/watch?v=sOWC4qrXxFk[the video demo].
+-------------------------------------------------------
 
 == Running on OpenShift
 
