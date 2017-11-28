@@ -84,6 +84,27 @@ public class MenuPanel implements IsElement {
             public void onSuccess(List<Tenant> tenantList) {
                 tenantListBoxValues = tenantList;
                 tenantListBox.clear();
+                Tenant tenant = tenantList.get(0);
+                tenantId = tenant.getId();
+                tenantEvent.fire(tenant);
+                /*tenantList.forEach(tenant -> tenantListBox.addItem(tenant.getName()));
+                if (tenantId == null) {
+                    if (!tenantList.isEmpty()) {
+                        Tenant tenant = tenantList.get(0);
+                        tenantId = tenant.getId();
+                        tenantEvent.fire(tenant);
+                    }
+                }*/
+            }
+        });
+    }
+
+    /*private void refreshTenantListBox() {
+        TenantRestServiceBuilder.getTenantList(new FailureShownRestCallback<List<Tenant>>() {
+            @Override
+            public void onSuccess(List<Tenant> tenantList) {
+                tenantListBoxValues = tenantList;
+                tenantListBox.clear();
                 tenantList.forEach(tenant -> tenantListBox.addItem(tenant.getName()));
                 if (tenantId == null) {
                     if (!tenantList.isEmpty()) {
@@ -94,7 +115,7 @@ public class MenuPanel implements IsElement {
                 }
             }
         });
-    }
+    }*/
 
     @EventHandler("skillsAnchor")
     public void showSkills(ClickEvent e) {
